@@ -25,44 +25,44 @@
 <body>
     <table id="statsTable">
         <tr>
-            <td>Январь</td>
+            <td>January</td>
             <td>120</td>
         </tr>
         <tr>
-            <td>Февраль</td>
+            <td>February</td>
             <td>140</td>
         </tr>
         <tr>
-            <td>Март</td>
+            <td>March</td>
             <td>115</td>
         </tr>
         <tr>
-            <td>Апрель</td>
+            <td>April</td>
             <td>100</td>
         </tr>
         <tr>
-            <td>Март</td>
+            <td>March</td>
             <td>80</td>
         </tr>
         <tr>
-            <td>Июнь</td>
+            <td>June</td>
             <td>90</td>
         </tr>
         <tr>
-            <td>Июль</td>
+            <td>June</td>
             <td>100</td>
         </tr>
         <tr>
-            <th>Итого</th>
+            <th>Total</th>
             <th id="output"></th>
         </tr>
     </table>
     <script>
         /*
-        Задание:
-        Напишите сценарий, который на основании значений во второй колонке таблицы #statsTable поменяет цвет строк таблицы (tr)
-        Если во второй ячейке значение больше 100, строка должна отображаться зеленым цветом, если значение менее 100 - красным цветом.
-        Для смены цвета строки используйте код row.style.backgroundColor = "цвет"
+       Task:
+Write a script that will change the color of table rows (tr) based on values in the second column of the #statsTable
+If the value in the second cell is greater than 100, the row should be displayed in green; if the value is less than 100, in red color.
+To change the row color, use the code row.style.backgroundColor = "color"
         */
        const table = document.querySelector('#statsTable')
        const output = table.querySelector('#output')
