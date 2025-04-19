@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 3</title>
+
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        table,
+        th,
+        td {
+            border: 1px solid black;
+        }
+
+        td, th {
+            padding: 8px;
+        }
+    </style>
+</head>
+
+<body>
+    <table id="statsTable">
+        <tr>
+            <td>January</td>
+            <td>20</td>
+        </tr>
+        <tr>
+            <td>February</td>
+            <td>140</td>
+        </tr>
+        <tr>
+            <td>March</td>
+            <td>115</td>
+        </tr>
+        <tr>
+            <td>April</td>
+            <td>100</td>
+        </tr>
+        <tr>
+            <td>May</td>
+            <td>80</td>
+        </tr>
+        <tr>
+            <td>June</td>
+            <td>90</td>
+        </tr>
+        <tr>
+            <td>Juli</td>
+            <td>100</td>
+        </tr>
+    </table>
+
+    <script>
+        /*
+        Завдання:
+        Напишіть сценарій, який видалить рядки таблиці, у яких значення другої колонки менше сотні.
+        (В попередньому уроці були розглянуті приклади, які показували як можна достукатися до батьківського елементу ,
+        оскільки видаляти треба не td, в якому знаходиться значення, а рядок tr, в якому розташований цей тд).
+        */
+    let scoreColumn = document.querySelectorAll('#statsTable td:nth-child(2)')
+
+    for(let score of scoreColumn) {
+        if(score.textContent < 100) {
+            score.closest('tr').remove()
+        }
+    }
+    </script>
+</body>
+
+</html>
