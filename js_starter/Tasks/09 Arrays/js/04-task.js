@@ -1,18 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Task 4</title>
-</head>
-<body>
-    <pre>
-        Завдання:
-        Дано масив. Створіть на основі цього значень цього масиву два нових. В один масив помістіть всі парні значення, а в другий все непарні.
-        Виведіть на екран значення, які ввійшли в перший масив і в другий масив.
-    </pre>
-    <script>
-        let values = [10, 20, 5, 7, 11, 8, 125, 4, 8, 3, 23];
+let values = [10, 20, 5, 7, 11, 8, 125, 4, 8, 3, 23];
 
         let pair = []
         let odd = []
@@ -41,6 +27,3 @@
         // console.log(pair)
         // console.log('Непарні значення масиву:')
         // console.log(odd)
-    </script>
-</body>
-</html>
