@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 2</title>
+</head>
+<body>
+    <pre>
+        Завдання:
+        Напишіть сценарій, який має отримати від користувача значення більше 10.
+        Якщо користувач ввів значення менше десяти, запросіть значення ще раз і так до тих пір, поки користувач не введе правильне значення.
+        або поки не нажме на клавішу ESC. Обробляти нечислові значення необов'язково.
+    </pre>
+    <script>
+        let sum=0;
+        let input=0;
+         while(input<10){
+            input=prompt('Введіть значення більше десяти')
+            sum+= +input
+            if(input==null){
+                break;
+            }
+        }
+        console.log(`Сума ваших введень становить ${sum}.`)
+    </script>
+</body>
+</html>
