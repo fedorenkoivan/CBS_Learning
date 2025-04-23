@@ -1,20 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Task 5</title>
-</head>
-
-<body>
-    <pre>
-        Задание:
-        Перепешите код так, чтобы значения для массива count задавались пользователем.
-        Посчитайте стоимость покупок. Выведите сколько было потрачено на каждый продукт по отдельности и сколько потрачено в общем.
-    </pre>
-    <script>
-        // названия товаров
+// названия товаров
         let names = [];
         names[0] = "Папір офісний А4, 80 г/м2, 500 л";
         names[1] = "Біндери дл паперу 51 мм";
@@ -40,7 +24,3 @@
             console.log(`Ви замовили ${names[i]} на суму ${sumProduct} гривень.`)
         }
         console.log(`Всього з вас ${totalSum} долларів.`)
-    </script>
-</body>
-
-</html>

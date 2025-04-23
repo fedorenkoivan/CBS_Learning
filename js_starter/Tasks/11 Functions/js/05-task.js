@@ -1,17 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Task 5</title>
-</head>
-<body>
-    <pre>
-        Задание:
-        Создайте функцию, которая принимает массив значений и возвращает массив с дублирующимися значениями или null если повторяющихся значений в массиве нет.
-    </pre>
-    <script>
-        function values(array){
+function values(array){
              let ar = []
              //let arr2 = []
              for(let value of array){
@@ -33,6 +20,3 @@
             //[1, 3, 2, 6, 7] i [3, 7, 7]
         }
         console.log(values([1, 3, 2, 6, 3, 7, 7, 7]))
-    </script>
-</body>
-</html>

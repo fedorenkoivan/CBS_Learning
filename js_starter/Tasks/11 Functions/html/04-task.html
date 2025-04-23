@@ -13,19 +13,7 @@
         Створіть функцію random(min, max), яка повертає випадкове значення в діапазоні від min до max.
         Зробіть, щоб сценарій запрацював. Код генерації випадкового значення можете знайти за допомогою гугла або з попереденіх уроків.
     </pre>
-    <script>
-        let throwCount = +prompt("Скільки разів ви хочете кинути шестигранний кубик?");
-
-        function random(min, max){
-            return Math.floor(Math.random() * (max - min + 1) + min)
-        }
-
-        for (let i = 0; i < throwCount; i++) {
-            const result = random(1, 6);
-            console.log(result);
-        }
-
-    </script>
+    <script src="../js/04-task.js"></script>
 </body>
 
 </html>

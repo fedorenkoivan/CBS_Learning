@@ -1,17 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Task 3</title>
-</head>
-<body>
-    <pre>
-        Завдання:
-        Перепишіть сценарій і скористайтеся одним з методів, вивчених на уроці. Код має зберігти поведінку.
-    </pre>
-    <script>
-        let values = [10, 20, 5, 7, 11, 8, 125, 4, 8, 3, 23];
+let values = [10, 20, 5, 7, 11, 8, 125, 4, 8, 3, 23];
         let oddValues = [];
         let evenValues = [];
         // let oddValuesPosition = 0;
@@ -44,6 +31,3 @@
         {
             console.log(evenVal);
         }
-    </script>
-</body>
-</html>
