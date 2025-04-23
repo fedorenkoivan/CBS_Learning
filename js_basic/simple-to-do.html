@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My first to-do</title>
+</head>
+<body>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        body {
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        #task-list {
+            width: 500px;
+        }
+
+        #start-message {
+            margin: 10px;
+        }
+
+        .task {
+            display: flex;
+            align-items: center;
+            border: 2px solid gray;
+            border-radius: 50px;
+            padding: 3px;
+            margin: 2px 10px; /* глянути, що робить */
+        }
+
+        .task p {
+            margin-left: 4px;
+        }
+
+        .completed {
+            background-color: green;
+            color: white;
+        }
+
+        .completed p {
+            text-decoration: line-through;
+        }
+
+        .input-panel {
+            width: 500px;
+            margin: 8px;
+            padding: 4px;
+        }
+
+        .input-panel button {
+            padding: 4px;
+            width: 25%;
+        }
+
+        .input-panel input {
+            height: 23px;
+            padding-left: 4px;
+            width: 68%;
+        }
+    </style>
+    <div class="input-panel">
+        <input type="text" id="user-value" placeholder="Write something">
+        <button id="add-task">Add task</button>
+    </div>
+    <div id="task-list">
+        <p id="start-message">No task found.</p>
+    </div>
+
+    <script>
+        let input = document.querySelector("#user-value");
+        let addTaskButton = document.querySelector("#add-task");
+        let taskList = document.querySelector("#task-list");
+        let startMessage = document.querySelector("#start-message");
+
+        addTaskButton.addEventListener('click', addTaskHandler)
+
+        function createTask(text) {
+            let div = document.createElement('div');
+            div.classList.add('task');
+
+            let input = document.createElement('input');
+            input.addEventListener('click', changeTaskState)
+            input.type = 'checkbox';
+
+            let p = document.createElement('p');
+            p.innerText = text;
+
+            div.append(input);
+            div.append(p);
+
+            return div
+        }
+
+        function changeTaskState() {
+            if(this.checked) {
+                this.parentElement.classList.add('completed');
+            } else {
+                this.parentElement.classList.remove('completed')
+            }
+        }
+
+        function addTaskHandler() {
+            if(input.value) {
+                if(!startMessage.hidden) startMessage.hidden = true
+                
+                let newTask = createTask(input.value);
+                taskList.append(newTask);
+                input.value = ''
+            } else {
+                alert('Write your task in input, please.')
+            }
+        }
+    </script>
+</body>
+</html>
