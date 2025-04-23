@@ -51,8 +51,3 @@ Fundamental JavaScript concepts:
 - User cards with conditional styling
 - Form validation and processing
 - Real-time style modification
-
-
----
-
-Perfect for anyone looking to improve their JavaScript skills through practical examples!
