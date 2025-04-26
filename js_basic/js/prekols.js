@@ -1,28 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HTML</title>
-</head>
-<body>
-    <!-- <button>Check cookie</button>
-    <script>
-        // document.cookie = 'hello=world'; my first cookie 09.08.2022 16:23 гии
-        const btn = document.querySelector('button');
-        document.cookie = 'hello=world; max-age=3; path=/'
-        btn.addEventListener('click', function() {
-            alert(document.cookie)
-        })
-    </script> -->
-   
-    <button>
-        create a promise
-    </button>
-
-    <script>
-         function asyncOperator(data) {
+function asyncOperator(data) {
             return new Promise(function (res, rej) {
                 let randomValue = Math.floor(Math.random() * 5001);
 
@@ -48,7 +24,3 @@
                 .then(data3 => asyncOperator(data3))
                 .catch(e => console.log(e.message))
         });
-        
-    </script>
-</body>
-</html>
