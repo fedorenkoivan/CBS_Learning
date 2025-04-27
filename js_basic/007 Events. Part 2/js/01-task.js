@@ -1,25 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Task 01</title>
-    <style>
-        #colorOutput {
-            width: 100px;
-            height: 100px;
-        }
-    </style>
-</head>
-
-<body>
-    <div id="colorOutput">
-    </div>
-
-    <script>
-        /*
+/*
         Завдання:
         Зробіть так, щоб при натисненні на клавішу G фон div#colorOutput ставав зеленим,
         при натисненні на клавішу R фон div#colorOutput ставав червоним, 
@@ -36,7 +15,3 @@
         const letter = e.key.toLowerCase()
         if(colors[letter]) div.style.background = colors[letter]
     })
-    </script>
-</body>
-
-</html>

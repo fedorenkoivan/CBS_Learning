@@ -1,29 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Task 03</title>
-    <style>
-        div {
-            display: inline-block;
-            width: 100px;
-            height: 100px;
-            background-color: green;
-            margin: 10px;
-        }
-    </style>
-</head>
-
-<body>
-    <div></div>
-    <div></div>
-    <div></div>
-
-    <script>
-        /*
+/*
         Завдання:
         Реалізуйте сценарій, який при натисненні на клавіші 1, 2 або 3 на клавіатурі буде додавати червону рамку
         на відповідний div. Якщо затисненні клавіші Ctrl + A, то червона рамка додається одразу
@@ -49,7 +24,3 @@
             }
         } 
        })
-    </script>
-</body>
-
-</html>

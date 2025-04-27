@@ -1,34 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Task 04</title>
-    <style>
-       body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        }
-
-        table,
-        th,
-        td {
-            border: 1px solid black;
-        }
-
-        td, th {
-            padding: 8px;
-        }
-    </style>
-</head>
-
-<body>
-    <table>
-
-    </table>
-
-    <script>
-        /*
+/*
         Задание:
         Создайте шаблон и выведите содержимое массива source в таблице на текущей странице.
         Свойство month должно выводиться в первый столбец, а свойство amount во второй столбец таблицы.
@@ -65,8 +35,3 @@
                 amount: 100
             }
         ];
-        
-    </script>
-</body>
-
-</html>

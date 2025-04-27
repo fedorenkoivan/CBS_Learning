@@ -1,53 +1,9 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Task 05</title>
-
-    <style>
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        }
-        #userList {
-            width: 200px;
-            display: inline-block;
-        }
-        #userList>li {
-            cursor: pointer;
-            list-style: none;
-        }
-
-        #userList>li:hover {
-            background-color: orange;
-        }
-
-        #output {
-            display: inline-block;
-            border:1px solid gray;
-            padding: 10px;
-            vertical-align: top;
-            margin-top: 20px;
-            width: 300px;
-            min-height: 180px;
-        }
-    </style>
-</head>
-
-<body>
-    <ul id="userList">
-
-    </ul>
-
-    <div id="output"></div>
-    <script>
-        /*
+/*
         Завдання:
-        Допрацюйте сценарій.
-        Зробіть так, щоб при наведенні на ім'я користувача в списку, у div#output відображалися 
-        вік (age), баланс (balance), компанія (company) та email даного користувача
+        Допрацюйте сценарій;
+        Скористайтеся делегуванням при додаванні обробників на подію click для li;
+        В поточному сценарії обробник додається li, а ви повинні зробити так, щоб обробник додавався для ul;
+        Рядок, який потребує змін, помічений коментарем '!!!'
         */
 
         let users = [
@@ -152,32 +108,27 @@
                 email: 'newman.wynn@visalia.name'
             }
         ];
-        let userList = document.querySelector("#userList");
-        let output = document.querySelector("#output");
 
+        let uslerList = document.querySelector("#userList");
+        uslerList.addEventListener('click', mouseEnterHandler);
+        
         for (let index = 0; index < users.length; index++) {
             const currentUser = users[index];
             let li = document.createElement("li");
             li.textContent = currentUser.name.first + " " + currentUser.name.last;
-            li.addEventListener("mouseenter", mouseEnterHandler);
-            li.addEventListener("mouseout", clearOutput)
+            // li.addEventListener("click", mouseEnterHandler, true); /*!!!*/
             li.dataset.userNumber = index;
-            userList.append(li);
+            uslerList.append(li);
         }
 
-        function mouseEnterHandler(event) {
-            const user = users[this.dataset.userNumber];
-            output.insertAdjacentHTML('beforeend', `<p> First name: ${user.name.first}</p>`);
-            output.insertAdjacentHTML('beforeend', `<p>Last name: ${user.name.last}</p>`);
-            output.insertAdjacentHTML('beforeend', `<p>Age ${user.age}</p>`);
-            output.insertAdjacentHTML('beforeend', `<p>Company: ${user.company}</p>`);
-            output.insertAdjacentHTML('beforeend', `<p>Balance: ${user.balance}</p>`);
-        }
+        function mouseEnterHandler(event) { 
+            // const currentUser = users[this.dataset.userNumber];
+            const currentUser = users[event.target.dataset.userNumber];
+            let message = "";
+            message += "Company " + currentUser.company + "<br />";
+            message += "Balance " + currentUser.balance + "<br />";
+            message += "Email " + currentUser.email + "<br />";
+            message += "Age " + currentUser.age + "<br />";
 
-        function clearOutput() {
-            output.textContent = ''
+            document.querySelector("#output").innerHTML = message;
         }
-    </script>
-</body>
-
-</html>

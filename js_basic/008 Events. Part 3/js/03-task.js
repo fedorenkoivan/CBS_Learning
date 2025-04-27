@@ -1,20 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Task 03</title>
-</head>
-
-<body>
-    <button>Кнопка 1</button>
-    <button>Кнопка 2</button>
-    <button>Кнопка 3</button>
-
-    <script>
-        /*
+/*
         Завдання:
         Перепишіть сценарій таким чином, щоб в коді працював один слухач для всіх трьох кнопок, при цьому 
         результат роботи сценарію не повинен змінитися.
@@ -31,7 +15,3 @@
         }
         const body = document.body;
         body.addEventListener('click', clickHandler)
-    </script>
-</body>
-
-</html>

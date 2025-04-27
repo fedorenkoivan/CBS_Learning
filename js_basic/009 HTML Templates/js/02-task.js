@@ -1,25 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Task 02</title>
-</head>
-
-<body>
-    <template id="template">
-        <div>
-            Название книги: <span id="titlePlaceholder"></span> <br />
-            Автор: <span id="authorPlaceholder"></span>
-            <hr />
-        </div>
-    </template>
-
-    <script src="mustache.min.js"></script>
-    <script>
-        /*
+/*
         Задание:
         Используя библиотеку mustache.js выведите содержимое массива books на экран используя шаблон #template
         Выполните рефакторинг (изменения структуры кода без изменения результата) шаблона #template таким образом, чтобы
@@ -39,7 +18,3 @@
                 author: "Секреты JavaScript ниндзя"
             }
         ];
-    </script>
-</body>
-
-</html>

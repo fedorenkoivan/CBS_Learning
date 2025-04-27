@@ -1,25 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-
-    <style>
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        }
-    </style>
-</head>
-
-<body>
-    <p>Пользователи системы:</p>
-    <ul id="usersList">
-    </ul>
-    
-    <script>
-        /*
+/*
         Задание:
         Перепишите код таким образом, чтобы в нем использовались шаблоны.
         Результат работы данного кода не должен измениться.
@@ -147,7 +126,3 @@
             li.textContent = liContent;
             list.append(li);
         }
-    </script>
-</body>
-
-</html>

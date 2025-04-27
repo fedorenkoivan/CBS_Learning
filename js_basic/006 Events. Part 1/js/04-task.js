@@ -1,26 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Task 04</title>
-</head>
-
-<body>
-    <ul id="list">
-        <li>Яблуко</li>
-        <li>Груша</li>
-        <li>Апельсин</li>
-        <li>Мандарин</li>
-        <li>Ананас</li>
-        <li>Слива</li>
-    </ul>
-
-    <button id="sort">Sorting elements</button>
-    <script>
-        /*
+/*
         Завдання:
         Перепишіть сценарій. Зробіть так, щоб сортування елементів у #list відбувалося при натисненні
         на кнопку (кнопку потрібно додати), а не при загрузці елементів сторінки
@@ -53,7 +31,3 @@
             list.append(item);
         });
         })
-    </script>
-</body>
-
-</html>

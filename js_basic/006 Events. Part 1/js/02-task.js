@@ -1,20 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Task 02</title>
-</head>
-
-<body>
-
-    Radius <input type="number" id="radius"> <br >
-    Height <input type="number" id="height"> <br>
-    <button>Compare</button>
-    <script>
-        /*
+/*
         Завдання:
         Напишіть сценарій, який рахує об'єм циліндру по параметрам, які вводить користувач.
         Для підрахунків використовуйте формулу - V=π * r в квадраті * h
@@ -30,8 +14,3 @@
             const v = Math.PI * Math.pow(+radius.value, 2) * Number(height.value)
             body.insertAdjacentHTML('beforeend', `<div>Площа дорівнює ${v}</div>`)
         })
-        
-    </script>
-</body>
-
-</html>

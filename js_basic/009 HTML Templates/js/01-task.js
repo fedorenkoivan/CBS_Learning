@@ -1,24 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Task 01</title>
-</head>
-
-<body>
-    <template id="template">
-        <div>
-            Название книги: <span id="titlePlaceholder"></span> <br />
-            Автор: <span id="authorPlaceholder"></span>
-            <hr />
-        </div>
-    </template>
-
-    <script>
-        /*
+/*
         Задание:
         Не используя посторонние библиотеки выведите содержимое массива books на экран используя шаблон #template
         В шаблоне элемент #titlePlaceholder используйте для отображения свойства title из объекта, находящегося в массиве books.
@@ -38,7 +18,3 @@
                 author: "Секреты JavaScript ниндзя"
             }
         ];
-    </script>
-</body>
-
-</html>

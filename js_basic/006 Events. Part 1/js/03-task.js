@@ -1,35 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Task 03</title>
-
-    <style>
-        .error {
-            color: red;
-            display: none;
-        }
-    </style>
-</head>
-
-<body>
-    Операнд 1: <input id="input1" type="text"> <br />
-    <span id="input1Error" class="error">Введіть значення</span> <br />
-    
-    Операнд 2: <input id="input2" type="text"> <br />
-    <span id="input2Error" class="error">Введіть значення</span> <br />
-
-    <button id="add-btn">+</button>
-    <button id="rem-btn">-</button>
-    <button id="mul-btn">*</button>
-    <button id="div-btn">/</button>
-    <button id="reset-btn">reset</button>
-
-    <script>
-        /*
+/*
         Завдання:
         Додайте зміни у сценарій.
         Додайте обробник на клік по кнопці reset. При кліці, значення, які ввели у поле вводу "Операнд 1"
@@ -80,7 +49,3 @@
             input2.style.border = '2px solid red'
             inp2Error.style.display = 'block'
         }
-    </script>
-</body>
-
-</html>

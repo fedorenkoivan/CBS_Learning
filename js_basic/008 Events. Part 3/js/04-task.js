@@ -1,27 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Task 04</title>
-</head>
-
-<body>
-    Операнд 1: <input id="input1" type="text"> <br />
-    Операнд 2: <input id="input2" type="text"> <br />
-
-    <div id="btns">
-        <button id="add">+</button>
-        <button id="rem">-</button>
-        <button id="mul">*</button>
-        <button id="div">/</button>
-    </div>
-    
-
-    <script>
-        /*
+/*
         Завдання:
         Перепишіть сценарій таким чином, щоб в коді був лише один обробник на подію click (замість чотирьох).
         Результат роботи сценарію не повинен змінитися.
@@ -52,7 +29,3 @@
                 return a * b;
             }
         }
-    </script>
-</body>
-
-</html>

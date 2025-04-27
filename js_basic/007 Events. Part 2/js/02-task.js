@@ -1,13 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Task 02</title>
-    <script>
-        /*
+/*
         Завдання:
         Не змінюючи положення тегу script, виправте помилку сценарію.
         При загрузці даного сценарію на сторінці повинне відобразитися повідомлення Hello world
@@ -15,14 +6,3 @@
        document.addEventListener('DOMContentLoaded', function() {
         document.querySelector("#output").textContent = "Hello world";            
         })
-
-    </script>
-</head>
-
-<body>
-    <div id="output">
-
-    </div>
-</body>
-
-</html>
