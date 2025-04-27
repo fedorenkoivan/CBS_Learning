@@ -2,7 +2,6 @@ import os
 import re
 from pathlib import Path
 import sys
-import shutil
 
 def extract_scripts(html_file_path, js_dir, html_dir):
     """Extract JavaScript from script tags to separate files and organize HTML files"""
