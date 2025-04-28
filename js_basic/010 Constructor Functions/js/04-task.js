@@ -1,16 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Task 04</title>
-</head>
-
-<body>
-    <script>
-        /*
+/*
         Задання:
         Перепишіть функцію конструктор Rect. Винесіть методи з екземпляру в прототип.
         */
@@ -44,7 +32,3 @@
 
         console.log("rect2 area " + rect2.getArea());
         console.log("rect2 perimeter " + rect2.getPerimeter());
-    </script>
-</body>
-
-</html>

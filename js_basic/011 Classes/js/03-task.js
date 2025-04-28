@@ -1,31 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Task 03</title>
-
-    <style>
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        }
-
-        .car-info {
-            display: inline-block;
-            margin: 10px 0 10px 10px;
-        }
-    </style>
-</head>
-
-<body>
-    <div class="car-info" id="placeholder1"></div>
-    <div class="car-info" id="placeholder2"></div>
-    <div class="car-info" id="placeholder3"></div>
-    
-    <script>
-        /*
+/*
         Завдання:
         Замініть функцію конструктор на клас. 
         Всі властивості класу Car змініть на закриті поля і для кожного поля додайте getter і setter за необхідністю.
@@ -76,7 +49,3 @@
         placeholder1.innerHTML = car1.html;
         placeholder2.innerHTML = car2.html;
         placeholder3.innerHTML = car3.html;
-    </script>
-</body>
-
-</html>

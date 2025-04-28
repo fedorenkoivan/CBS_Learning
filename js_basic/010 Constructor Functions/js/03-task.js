@@ -1,30 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Task 03</title>
-    <style>
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        }
-
-        .car-info {
-            display: inline-block;
-            margin: 10px 0 10px 10px;
-        }
-    </style>
-</head>
-
-<body>
-    <div class="car-info" id="placeholder1"></div>
-    <div class="car-info" id="placeholder2"></div>
-    <div class="car-info" id="placeholder3"></div>
-
-    <script>
-        /*
+/*
         Завдання:
         Знайдіть і виправіть помилку в коді.
         */
@@ -56,7 +30,3 @@
         car1.showStats(placeholder1);
         car2.showStats(placeholder2);
         car3.showStats(placeholder3);
-    </script>
-</body>
-
-</html>

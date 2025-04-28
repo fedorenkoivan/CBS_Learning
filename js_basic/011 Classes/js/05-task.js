@@ -1,46 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Task 05</title>
-
-    <style>
-        p {
-            margin: 0;
-            padding: 0;
-        }
-
-        .report-block {
-            border: 1px solid green;
-            background-color: #00800049;
-            margin: 10px;
-            padding: 10px;
-        }
-    </style>
-</head>
-
-<body>
-    <button>Створити звіт (не працює)</button>
-    <div id="output"></div>
-
-    <template id="monthReport">
-        <div class="report-block">
-            <p>месяц {{month}}</p>
-            <p>сумма {{amount}}</p>
-            <ul></ul>
-                {{#users}} <!-- початок циклу для виведення масиву users -->
-                <li>{{.}}</li> <!-- . - поточний елемент масиву -->
-                {{/users}} <!-- кінець циклу -->
-            </ul>
-        </div>
-    </template>
-
-    <script src="mustache.min.js"></script>
-    <script>
-        /*
+/*
             Завдання:
             Перепишіть код з використанням класів.
             Створіть клас MonthReport з властивостями month, amount, users.
@@ -116,7 +74,3 @@
         array.forEach(report => {
             report.render()
         })
-    </script>
-</body>
-
-</html>

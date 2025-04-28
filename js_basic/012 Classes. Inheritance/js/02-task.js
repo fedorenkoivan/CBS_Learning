@@ -1,16 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Task 02</title>
-</head>
-
-<body>
-    <script>
-        /*
+/*
         Завдання:
         Зробіть так, щоб клас Truck наслідувався від класу Car.
         Перепишіть метод move, в класі Truck - 
@@ -59,7 +47,3 @@
         let v3 = new Truck();
         v3.loadCargo(100);
         v3.move();
-    </script>
-</body>
-
-</html>
