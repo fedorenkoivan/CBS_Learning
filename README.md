@@ -1,4 +1,4 @@
-# CBS Learning Repository
+# 📚 CBS Learning Repository
 
 Welcome to my comprehensive JavaScript learning repository! This collection tracks my journey through JavaScript fundamentals and DOM manipulation with practical examples and exercises.
 
