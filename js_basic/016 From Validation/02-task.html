@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 02</title>
+    <style>
+        .form-group {
+            margin: 4px;
+        }
+
+        .form-group label {
+            width: 75px;
+            display: inline-block;
+        }
+    </style>
+</head>
+
+<body>
+    <form>
+        <div class="form-group">
+            <label>Логін</label>
+            <input type="text" name="login" required minlength="4">
+        </div>
+        <div class="form-group">
+            <label>Пароль</label>
+            <input type="password" name="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[!@#\$%\^&\*]).{6,}">
+        </div>
+
+        <div class="form-group">
+            <input type="submit" value="Зарегистрироваться">
+        </div>
+    </form>
+    
+    <script>
+        /*
+        Завдання:
+        Додайте валідацію форми:
+        Поле вводу логіна обов'язкове і повинне містити не менше 4 символів
+        Поле вводу паролю повинне містити рядкове значення, не коротше шести символів, букв в нижньому і верхньому 
+        регістрі, цифри і спец символи.
+
+        Перевірка має бути організована за допомогою вбудованої валідації.
+        Регулярний вираз для перевірки паролю - (?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[!@#\$%\^&\*]).{6,}
+        */
+
+    </script>
+</body>
+
+</html>
