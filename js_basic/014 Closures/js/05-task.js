@@ -36,12 +36,12 @@
         //         this.#threshold = threshold;
         //     }
 
-        //     // Возвращает все значения из массива values, которые больше, чем значение переменной threshold
+        //     // Повертає всі значення з масиву values, які більші за значення змінної threshold
         //     getGreaterThanThreshold() {
         //         return this.#values.filter(v => v > this.#threshold);
         //     }
 
-        //     // возвращает все значения из массива values, которые меньше, чем значение переменной threshold 
+        //     // повертає всі значення з масиву values, які менше за значення змінної threshold 
         //     getLessThanThreshold() {
         //         return this.#values.filter(v => v < this.#threshold);
         //     }

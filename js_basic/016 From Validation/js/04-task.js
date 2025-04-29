@@ -127,7 +127,7 @@
 
                     let li = document.createElement("li");
                     li.textContent = displayFn(currentData);
-                    currentData.id = index; // для каждого пользователя указываем id, который совпадает с id в разметке
+                    currentData.id = index; // для кожного користувача вказуємо id, який співпадає з id в розмітці
                     li.dataset.id = index;
 
                     this.listElement.append(li);
@@ -149,7 +149,7 @@
                 }
             }
 
-            // удаление данных из разметки и массива
+            // видалення даних з ромзітки і масиву
             deleteSelectedItem() {
                 const index = this.data.indexOf(this.selectedData);
                 if (index != -1) {
