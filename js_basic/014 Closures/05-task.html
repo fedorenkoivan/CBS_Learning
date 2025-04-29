@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 05</title>
+</head>
+
+<body>
+    <script>
+        /*
+        Завдання:
+        Перепишіть клас Numbers, використовуючи шаблон "модуль".
+        Поля values і threshold повинні бути закриті в модулі і зберігатися в замиканні.
+        getGreaterThanThreshold і getLessThanThreshold повинні бути відкритими частинами модуля.
+
+        На практиці, використання класів краще, за виключенням ситуацій,
+        коли процес розробки і мета виконання не дають можливості використовувати 
+        ключове слово class
+        */
+       let numbrs = (function () {
+        let values, threshold;
+
+        return {
+            getGreaterThanThreshold: function() {
+                return values.filter(v => v > threshold)
+            },
+            getLessThanThreshold: function () {
+                return values.filter(v => v < threshold)
+            },
+            setArray: function(elements) {
+                    values = elements
+                },
+            setTreeshold: function (number) {
+                threshold = number
+            }
+        }
+       } ())
+
+        // class Numbers {
+        //     #values;
+        //     #threshold;
+
+        //     constructor(threshold, values) {
+        //         this.#values = values;
+        //         this.#threshold = threshold;
+        //     }
+
+        //     // Возвращает все значения из массива values, которые больше, чем значение переменной threshold
+        //     getGreaterThanThreshold() {
+        //         return this.#values.filter(v => v > this.#threshold);
+        //     }
+
+        //     // возвращает все значения из массива values, которые меньше, чем значение переменной threshold 
+        //     getLessThanThreshold() {
+        //         return this.#values.filter(v => v < this.#threshold);
+        //     }
+        // }
+
+        // let numbers = new Numbers(50, [10, 20, 23, 11, 5, 6, 90, 33, 45, 67]);
+        // let gt = numbers.getGreaterThanThreshold();
+        // let lt = numbers.getLessThanThreshold();
+        
+        // console.log(gt);
+        // console.log(lt);
+
+        numbrs.setArray([2, 7, 50, 14, 0.2, 111])
+        numbrs.setTreeshold(10)
+
+        console.log(numbrs.getGreaterThanThreshold())
+        console.log(numbrs.getLessThanThreshold())
+    </script>
+</body>
+
+</html>
