@@ -1,16 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Task 05</title>
-</head>
-
-<body>
-    <script>
-        /*
+/*
         Завдання:
         Перепишіть клас Numbers, використовуючи шаблон "модуль".
         Поля values і threshold повинні бути закриті в модулі і зберігатися в замиканні.
@@ -71,7 +59,3 @@
 
         console.log(numbrs.getGreaterThanThreshold())
         console.log(numbrs.getLessThanThreshold())
-    </script>
-</body>
-
-</html>

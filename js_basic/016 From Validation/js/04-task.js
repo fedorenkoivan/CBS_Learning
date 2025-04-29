@@ -1,98 +1,14 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Task 04</title>
-    <style>
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        }
-
-        #userList {
-            width: 200px;
-            display: inline-block;
-        }
-
-        #userList>li {
-            cursor: pointer;
-            list-style: none;
-        }
-
-        #userList>li:hover {
-            background-color: orange;
-        }
-
-        #userList li.selected {
-            background-color: lightcoral;
-        }
-
-        #output {
-            display: inline-block;
-            border: 1px solid gray;
-            padding: 10px;
-            vertical-align: top;
-            margin-top: 20px;
-            width: 300px;
-            min-height: 180px;
-        }
-
-        .form-group {
-            margin-bottom: 4px;
-        }
-
-        .form-group label {
-            width: 85px;
-            display: inline-block;
-        }
-
-        .form-group input {
-            width: 200px;
-        }
-    </style>
-</head>
-
-<body>
-    <ul id="userList">
-    </ul>
-
-    <form id="output">
-        <div class="form-group">
-            <label for="firstName">Ім'я</label>
-            <input type="text" name="firstName">
-        </div>
-        <div class="form-group">
-            <label for="lastName">Прізвище</label>
-            <input type="text" name="lastName">
-        </div>
-        <div class="form-group">
-            <label for="companyName">Компанія</label>
-            <input type="text" name="companyName">
-        </div>
-        <div class="form-group">
-            <label for="balance">Баланс</label>
-            <input type="number" name="balance">
-        </div>
-        <div class="form-group">
-            <label for="email">Email</label>
-            <input type="email" name="email">
-        </div>
-        <div class="form-group">
-            <label for="age">Вік</label>
-            <input type="number" name="age">
-        </div>
-        <input type="button" value="Save" id="saveButton">
-    </form>
-    <script>
-
-        /*
+/*
         Завдання:
-        Зробіть так, щоб при натисненні на кнопку "Зберегти" з'являлося сповіщення "Ви дійсно хочете зберегти зміни?"
-        Якщо користувач натискає на так - зміни зберігаються, відміна - зміни не застосовуються
+        Додайте валідацію даних з наступними правилами:
+        Все поля форми обов'язкові для вводу
+        balance - значення повинне бути більше 1000
+        email - значення повинне бути в формате електронної адреси
+        age - значення повинне бути більше 18
+
+        Для запобігання перезавантаження сторінки відміняйте дію за замовчанням, обробляючи подію submit.
         */
-       
+
         let users = [
             {
                 balance: '1250.89',
@@ -195,7 +111,8 @@
                 email: 'newman.wynn@visalia.name'
             }
         ];
-        // клас для виводу інформації в UL
+
+        // Клас для виводу інформації в UL
         class ListService {
             selectedData;
             data;
@@ -207,19 +124,22 @@
 
                 for (let index = 0; index < data.length; index++) {
                     const currentData = data[index];
-                    
+
                     let li = document.createElement("li");
                     li.textContent = displayFn(currentData);
-                    li.dataset.index = index;
+                    currentData.id = index; // для каждого пользователя указываем id, который совпадает с id в разметке
+                    li.dataset.id = index;
 
                     this.listElement.append(li);
                 }
             }
 
             select(id) {
-                this.selectedData = this.data[id];
+                this.selectedData = this.data.filter(x => x.id == id)[0];
                 this.deselectAll();
-                this.listElement.children[id].classList.add("selected");
+
+                const index = this.data.indexOf(this.selectedData);
+                this.listElement.children[index].classList.add("selected");
             }
 
             deselectAll() {
@@ -228,9 +148,18 @@
                     child.classList.remove("selected");
                 }
             }
+
+            // удаление данных из разметки и массива
+            deleteSelectedItem() {
+                const index = this.data.indexOf(this.selectedData);
+                if (index != -1) {
+                    this.listElement.children[index].remove();
+                    this.data.splice(index, 1);
+                }
+            }
         }
 
-        // Клас для работи з формою, яка редагує інфо про користувача
+        // Клас для роботи з формою, редактує інформацію про користувача
         class UserFormService {
             currentUser;
             form;
@@ -258,10 +187,17 @@
                 this.currentUser.email = this.form.email.value;
                 this.currentUser.age = this.form.age.value;
             }
+
+            // очистка формы
+            resetForm() {
+                this.form.reset();
+            }
         }
 
         let userList = document.querySelector("#userList");
         let saveButton = document.querySelector("#saveButton");
+        let deleteButton = document.querySelector("#deleteButton");
+        const form = document.forms[0]; 
 
         let listService = new ListService(users, userList, x => x.name.first + " " + x.name.last);
         let formService = new UserFormService(document.forms[0]);
@@ -269,21 +205,22 @@
         userList.addEventListener("click", function (e) {
             if (e.target.tagName != "LI") return;
 
-            const userNumber = e.target.dataset.index;
+            const userNumber = e.target.dataset.id;
             listService.select(userNumber);
             formService.fillForm(listService.selectedData);
         });
 
         saveButton.addEventListener("click", function () {
-            if(confirm('Ви дійсно хочете зберегти форму?')) {
-                formService.saveForm();
-                alert('Ваші зміни збережено')
-            }
-            
-            return
+            formService.saveForm();
         });
 
-    </script>
-</body>
-
-</html>
+        // видаляємо і очищуємо форму
+        deleteButton.addEventListener("click", function () {
+            listService.deleteSelectedItem();
+            formService.resetForm();
+        });
+        
+        form.addEventListener('submit', function (event) {
+            formService.saveForm();
+            event.preventDefault();
+        })

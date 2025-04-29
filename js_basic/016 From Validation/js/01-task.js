@@ -1,42 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Task 01</title>
-    <style>
-        .form-group {
-            margin: 4px;
-        }
-
-        .form-group label {
-            width: 75px;
-            display: inline-block;
-        }
-    </style>
-</head>
-
-<body>
-    <form>
-        <div class="form-group">
-            <label>Логін</label>
-            <input type="text" name="login">
-            <span class="hint" id="loginHint">Ваш логін повинен складатися з не менш ніж чотирьох символів</span>
-        </div>
-        <div class="form-group">
-            <label>Пароль</label>
-            <input type="password" name="password">
-            <span class="hint" id="passwordHint">Пароль повинен складатися з букв, цифр і спец символів</span>
-        </div>
-
-        <div class="form-group">
-            <input type="submit" value="Зареєструватися">
-        </div>
-    </form>
-    <script>
-        /*
+/*
         Завдання:
         1. При натисненні на кнопку "Зареєструватися" (не використовуючи події click) виведіть за допомогою alert
         інформацію, яку ввів користувач в поля login і password.
@@ -67,7 +29,3 @@
        form.password.addEventListener('blur', function() {
             password.style.display = 'none'
        })
-    </script>
-</body>
-
-</html>

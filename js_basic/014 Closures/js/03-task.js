@@ -1,35 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Task 03</title>
-    <style>
-        body {
-            font-family: Helvetica, Arial, sans-serif;
-            font-size: 16px;
-        }
-    </style>
-</head>
-
-<body>
-    <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita nemo nam amet velit ut explicabo nisi voluptas
-        dicta ad, autem, id asperiores rem corporis esse. Dignissimos dicta facilis eaque mollitia.
-    </p>
-
-    <a href="#" id="size-16">16</a>
-    <a href="#" id="size-24">24</a>
-    <a href="#" id="size-32">32</a>
-
-    <a href="#" id="color-red">red</a>
-    <a href="#" id="color-green">green</a>
-    <a href="#" id="color-blue">blue</a>
-
-    <script>
-        /*
+/*
         Завдання:
         За прикладом з посиланнями size-16, size-24, size-32, які використовують замикання, додайте обробники
         на клік за посиланню red, green, blue. При кліці на посилання, колір параграфу повинен змінитися на відповідний до тексту посилання.
@@ -64,8 +33,3 @@
                 element.onclick = changeColor(element.textContent)
             }
         }
-
-</script>
-</body>
-
-</html>

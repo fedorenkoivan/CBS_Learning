@@ -1,16 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Task 04</title>
-</head>
-
-<body>
-    <script>
-        /*
+/*
         Задание:
         Используя IIFE избавьтесь от глобальных идентификаторов в коде.
         Убедитесь в том, что глобальных идентификаторов нет, выполнив код после 25 строки
@@ -35,7 +23,3 @@
 
         globalThis.testFunc(); // Uncaught TypeError: globalThis.testFunc is not a function
         testFunc(); // Uncaught ReferenceError: testFunc is not defined
-    </script>
-</body>
-
-</html>
