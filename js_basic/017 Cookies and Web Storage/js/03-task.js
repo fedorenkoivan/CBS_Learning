@@ -1,69 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Task 03</title>
-
-    <style>
-        .form-group {
-            margin: 4px;
-        }
-
-        .form-group label {
-            width: 75px;
-            display: inline-block;
-        }
-
-        table, td {
-            padding: 8px;
-        }
-
-        td {
-            border: 1px solid black;
-        }
-    </style>
-</head>
-
-<body>
-
-
-    <form name="writeForm">
-        <div class="form-group">
-            <label>Ключ</label>
-            <input type="text" name="keyInput" required>
-        </div>
-        <div class="form-group">
-            <label>Значення</label>
-            <input type="text" name="valueInput" required>
-        </div>
-        <div class="form-group">
-            <input type="submit" value="Запис">
-        </div>
-    </form>
-
-    <br>
-
-    <form name="readForm">
-        <div class="form-group">
-            <label>Key</label>
-            <input type="text" name="keyInput" required>
-        </div>
-        <div class="form-group">
-            <input type="submit" value="Reading">
-        </div>
-        <div class="form-group">
-            <input type="button" value="Show all" id="showBtn">
-        </div>
-        <div class="form-group">
-            <input type="button" value="Delete localStorage" id="deleteBtn">
-        </div>
-    </form>
-
-    <script>
-        /*
+/*
         Завдання:
         Додайте на сторінку кнопку "Показати усе". При кліку по кнопці, на сторінці
         на сторінці повинна з'явитися таблиця з вмістом localStorrage. Перша колонка таблиці - ключ, друга - значення.
@@ -111,7 +46,3 @@
             localStorage.clear()
             alert('localStorage успішно очищений')       
         })
-    </script>
-</body>
-
-</html>

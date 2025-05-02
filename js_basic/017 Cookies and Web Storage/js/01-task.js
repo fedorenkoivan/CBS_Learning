@@ -1,22 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Task 01</title>
-</head>
-
-<body>
-    <form>
-        <input type="radio" name="color" value="#ffd800" /> Orange
-        <input type="radio" name="color" value="#5ade54" /> Green
-        <input id="saveButton" type="button" value="Сохранить" />
-    </form>
-
-    <script>
-        if(document.cookie) {
+if(document.cookie) {
             let myCookie = decodeURIComponent(document.cookie);
             let start = myCookie.indexOf('#');
             document.body.style.backgroundColor = myCookie.substring(start)
@@ -31,7 +13,3 @@
             document.body.style.backgroundColor = selectedColor;
             document.cookie = encodeURIComponent(selectedColor);
        })
-    </script>
-</body>
-
-</html>
