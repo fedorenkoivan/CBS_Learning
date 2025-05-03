@@ -1,33 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Task 04</title>
-</head>
-<style>
-    .table {
-        border: 1px solid black;
-    }
-    .completed {
-        background-color: lightgreen;
-    }
-    .incompleted {
-        background-color: lightcoral;
-    }
-</style>
-<body>
-    <table class="output">
-        <tr>
-            <td>Number</td>
-            <td>Completed?</td>
-            <td>Task</td>
-        </tr>
-    </table>
-    <script>
-        /*
+/*
         Завдання:
         Напишіть сценарій, який виконує GET запит на адресу https://jsonplaceholder.typicode.com/todos
         І виводить вміст відповіді у вигляді таблиці.
@@ -52,7 +23,3 @@
             console.log('Ваші завдання успішно виведені');
        })
        .catch(error => alert(error.message));
-    </script>
-</body>
-
-</html>

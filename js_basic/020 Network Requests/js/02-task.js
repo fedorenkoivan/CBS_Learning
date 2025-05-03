@@ -1,34 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Task 02</title>
-</head>
-<style>
-    form {
-        display: flex;
-        align-items: center;
-    }
-</style>
-<body>
-    <form>
-        <div class="title">
-            <label for="title">Title</label>
-            <input type="text" id="title">
-        </div>
-        <div class="body">
-            <label for="body">Body</label>
-            <input type="text" id="body">
-        </div>
-        <div class="update">
-            <input type="button" id="update" value="Update data">
-        </div>
-    </form>
-    <script>
-        const form = document.forms[0]
+const form = document.forms[0]
         const title = form.title;
         const body = form.body;
         let url = 'https://jsonplaceholder.typicode.com/posts/1';
@@ -80,7 +50,3 @@
         для оновлення сутності скористайтеся PUT запитом https://jsonplaceholder.typicode.com/posts/1. Обробіть відповідь
         і виведіть інформацію про помилку або про успішно завершену операцію.
         */
-    </script>
-</body>
-
-</html>

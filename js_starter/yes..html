@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+            const ONES = [
+              '',
+             'one',
+             'two',
+             'three',
+             'four',
+             'five',
+             'six',
+             'seven',
+             'eight',
+             'nine']
+            const TEENS = [
+             'ten',
+             'eleven',
+             'twelve',
+             'thirteen',
+             'fourteen',
+             'fivteen',
+             'sixteen',
+             'seventeen',
+             'eighteen',
+             'nineteen'
+        ]
+            const TENS = [
+                '',
+                '',
+                'twenty',
+                'thirty',
+                'fourty',
+                'fifty',
+                'sixty',
+                'eighty',
+                'ninety'
+            ]
+        
+            number2text = num => {
+                if(num < 20) 
+                    return ONES[num] ?? TEENS[num-10]
+                if(num < 100)
+                    return `${TEENS[Math.floor(num / 10)]} ${number2text(num % 10)}`
+                if(num < 1000)
+                    return `${ONES[Math.floor(num / 100)]} hundred ${number2text(num % 100)}`
+                
+                throw new Error("Number too high")
+            }
+            console.log(number2text(999))
+    </script>
+</body>
+</html>
