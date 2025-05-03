@@ -1,19 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Task 05</title>
-</head>
-
-<body>
-    <button>Загрузити</button>
-    <br>
-    <br>
-    <script>
-        /*
+/*
         Завдання:
         Додайте обробку виключень ланцюжку промісів, який створюється на 27 рядку.
         Обробляючи виключення, виведіть інформацію про нього в alert.
@@ -55,7 +40,3 @@
 
             return promise;
         }
-    </script>
-</body>
-
-</html>

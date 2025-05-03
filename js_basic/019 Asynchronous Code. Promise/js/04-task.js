@@ -1,17 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Task 04</title>
-</head>
-
-<body>
-    <button>Скачати</button>
-    <script>
-        /*
+/*
         Завдання:
         Фуункція download імітує асинхронну операцію, яка скачує дані з сервера. На виконання асинхронної  
         операціїї витрачається до п'яти секунд часу.  
@@ -35,7 +22,3 @@
             Promise.all(promisesArray)
             .then(() => console.log('Всі файли скачані'))
         })
-    </script>
-</body>
-
-</html>

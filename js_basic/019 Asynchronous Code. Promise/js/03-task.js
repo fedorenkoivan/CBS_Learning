@@ -1,17 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Task 03</title>
-</head>
-
-<body>
-    <button>Запустить</button>
-    <script>
-        /*
+/*
         Завдання:
         Внесіть зміни у функцію asyncOperation. Ця функції представляє абстрактну асинхронну операцію, виконання якої
         займає дві секунди. Результатом функції є випадкове число від нуля до п'яти тисяч включно (записується у 
@@ -36,7 +23,3 @@
             asyncOperation()
             .then(res => alert(res))
         })
-    </script>
-</body>
-
-</html>
