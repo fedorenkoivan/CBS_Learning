@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 04</title>
+</head>
+<style>
+    .table {
+        border: 1px solid black;
+    }
+    .completed {
+        background-color: lightgreen;
+    }
+    .incompleted {
+        background-color: lightcoral;
+    }
+</style>
+<body>
+    <table class="output">
+        <tr>
+            <td>Number</td>
+            <td>Completed?</td>
+            <td>Task</td>
+        </tr>
+    </table>
+    <script>
+        /*
+        Завдання:
+        Напишіть сценарій, який виконує GET запит на адресу https://jsonplaceholder.typicode.com/todos
+        І виводить вміст відповіді у вигляді таблиці.
+        */
+       const url = 'https://jsonplaceholder.typicode.com/todos';
+       let output = document.querySelector('.output')
+       fetch(url)
+       .then(response => response.json())
+       .then(array => {
+        let counter = 1;
+            array.forEach(elem => {
+                let tr = document.createElement('tr');
+                tr.insertAdjacentHTML('beforeend', `<td>${counter}</td>`);
+                tr.insertAdjacentHTML('beforeend', `<td>${elem.completed}</td>`);
+                tr.insertAdjacentHTML('beforeend', `<td>${elem.title}</td>`);
+
+                tr.classList.add(`${elem.completed ? 'completed' : 'incompleted'}`);
+
+                counter++
+                output.append(tr);
+            })
+            console.log('Ваші завдання успішно виведені');
+       })
+       .catch(error => alert(error.message));
+    </script>
+</body>
+
+</html>
