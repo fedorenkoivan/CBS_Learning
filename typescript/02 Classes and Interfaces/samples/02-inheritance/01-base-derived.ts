@@ -22,23 +22,23 @@ class Base {
     }
 }
 
-class Derived extends Base { // класс Derived наследует класс Base, класс Derived расширяет класс Base
+class Derived extends Base { // клас Derived успадковує клас Base, клас Derived розширює клас Base
 
     constructor() {
         
-        super(); // Вызов конструктора базового класса. Обязательная операция при наследовании. 
+        super(); // Виклик конструктора базового класу. Обов'язкова операція при успадкуванні. 
 
         console.log("public property = " + this.value2);
         console.log("protected property = " + this.value3);
 
-        // this.method1(); // метод private, скрыт  
-        this.method2();    // public - открыт для всех  
-        this.method3();    // protected - доступен, так как данный класс является наследником
+        // this.method1(); // метод private, прихований  
+        this.method2();    // public - відкритий для всіх  
+        this.method3();    // protected - доступний, оскільки даний клас є спадкоємцем
     }
 }
 
 let derived1: Derived = new Derived();
 
-// доступен только метод method2, так как он public. Остальные методы не доступны так как данный код находится за пределами класса
+// доступний тільки метод method2, оскільки він public. Інші методи не доступні, оскільки даний код знаходиться за межами класу
 derived1.method2(); 
 console.log(derived1.value2);

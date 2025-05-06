@@ -1,4 +1,4 @@
-// базовый тип данных
+// базовий тип даних
 class Shape {
     public name: string;
 
@@ -11,24 +11,24 @@ class Shape {
     }
 }
 
-// производный тип данных
+// похідний тип даних
 class Rect extends Shape {
     public width: number;
     public height: number;
 
     constructor(width: number, height: number) {
-        super("Rectangle"); // запуск конструктора родительского класса
+        super("Rectangle"); // запуск конструктора батьківського класу
         this.width = width;
         this.height = height;
     }
 
     public getInfo(): string {
-        let baseInfo: string = super.getInfo(); // вызов метода родительского класса
+        let baseInfo: string = super.getInfo(); // виклик методу батьківського класу
         return `${baseInfo} Height = ${this.height}, Width = ${this.width}`;
     }
 }
 
-// производный тип данных
+// похідний тип даних
 class Circle extends Shape {
     public radius: number;
 
@@ -43,13 +43,13 @@ class Circle extends Shape {
     }
 }
 
-let shapes: Shape[] = []; // создание массива базового типа
-shapes.push(new Rect(100, 200)); // заполнение массива экземплярами производного класса
+let shapes: Shape[] = []; // створення масиву базового типу
+shapes.push(new Rect(100, 200)); // заповнення масиву екземплярами похідного класу
 shapes.push(new Circle(10));
 shapes.push(new Circle(43));
 shapes.push(new Rect(10, 30));
 
-// в массив shapes можно добавлять только объекты имеющие идентичную с классом Shape структуру
+// в масив shapes можна додавати тільки об'єкти, що мають ідентичну з класом Shape структуру
 shapes.push({
     name: "foo",
     getInfo: () => { return "bar"}

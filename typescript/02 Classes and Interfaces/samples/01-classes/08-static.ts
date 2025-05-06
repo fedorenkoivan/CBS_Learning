@@ -10,7 +10,7 @@ class Point {
 
 class Grid {
     public points: Point[] = [];
-    public static origin: Point = { x: 0, y: 0 }; // Статическое свойство. Общее для всех экземпляров
+    public static origin: Point = { x: 0, y: 0 }; // Статична властивість. Спільна для всіх екземплярів
 
     add(point: Point) {
         this.points.push(point);

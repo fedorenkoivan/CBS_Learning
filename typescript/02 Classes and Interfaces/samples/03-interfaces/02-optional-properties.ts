@@ -1,5 +1,5 @@
 interface RectangleShape {
-    name?: string; // свойство не обязательное
+    name?: string; // властивість не обов'язкова
     width: number;
     height: number;
 }
@@ -30,4 +30,4 @@ let rectangle3 = {
 
 drawRectangle(rectangle1);
 drawRectangle(rectangle2);
-//drawRectangle(rectangle3); // у аргумента нет обязательного свойства height
+//drawRectangle(rectangle3); // у аргумента немає обов'язкової властивості height

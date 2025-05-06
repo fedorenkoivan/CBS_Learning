@@ -12,7 +12,7 @@ class Student {
     }
 }
 
-let student1 = new Student("Ivan", 25); // вызов конструктора с передачей значений
+let student1 = new Student("Ivan", 25); // виклик конструктора з передачею значень
 let student2 = new Student("John", 24);
 
 student1.print();

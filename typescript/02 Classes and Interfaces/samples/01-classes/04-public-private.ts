@@ -1,7 +1,7 @@
 class Employee {
-    public name: string; // модификатор доступа public - указывает что поле, видимое за пределами данного класса 
-    position: string; // по умолчанию public
-    private company: string; // модификатор доступа private - указывает что данное поле закрытое и не доступно за пределами класса
+    public name: string; // модифікатор доступу public - вказує що поле є видимим за межами даного класу 
+    position: string; // за замовчуванням public
+    private company: string; // модифікатор доступу private - вказує що дане поле закрите і не доступне за межами класу
 
     constructor(name: string, position: string) {
         this.name = name;
@@ -17,6 +17,6 @@ class Employee {
 let emp1: Employee = new Employee("Ivan", "Developer");
 emp1.name = "John";
 emp1.position = "Team Lead";
-//emp1.company = "..."; // [ts] Property 'company' is private and only accessible within class 'Employee'
+//emp1.company = "..."; // [ts] Властивість 'company' є приватною і доступна тільки всередині класу 'Employee'
 
 emp1.printToConsole();

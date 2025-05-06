@@ -1,5 +1,5 @@
-// с помощью ключевого слова readonly можно создать поля только на чтение.
-// Такое поле может быть инициализировано в момент его создания или в конструкторе 
+// за допомогою ключового слова readonly можна створити поля тільки для читання.
+// Таке поле може бути ініціалізовано в момент його створення або в конструкторі 
 class Dog {
     public readonly name: string;
     public readonly numberOfLegs: number = 4;
@@ -12,5 +12,5 @@ class Dog {
 let dog: Dog = new Dog("Sharik");
 console.log(dog.name);
 console.log(dog.numberOfLegs);
-//dog.numberOfLegs = 5; // [ts] cannot assign to 'numberOfLags' because it is a constant or read-only property
+//dog.numberOfLegs = 5; // [ts] неможливо присвоїти значення 'numberOfLegs', оскільки це константа або властивість тільки для читання
 //dog.name = "";
