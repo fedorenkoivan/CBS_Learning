@@ -1,0 +1,21 @@
+{
+  "name": "001 variables",
+  "version": "1.0.0",
+  "lockfileVersion": 2,
+  "requires": true,
+  "author": "ITVDN",
+  "description": "TypeScript Fundamentals Урок 1. Переменные и функции",
+  "license": "ISC",
+  "main": "index.js",
+  "packages": {},
+  "devDependencies": {
+    "lite-server": "^2.3.0",
+    "typescript": "^2.8.3"
+  },
+  "scripts": {
+    "build": "tsc -w",
+    "chooseVers": "tsc -t",
+    "setFolder": "tsc --outDir",
+    "removeComm": "tsc --removeComments"
+  }
+}

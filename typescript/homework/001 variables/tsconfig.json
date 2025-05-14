@@ -1,0 +1,13 @@
+{
+  "compilerOptions": {
+    "target": "ES5",  
+    "removeComments": false,
+    "outDir": "scripts", 
+  },
+  "include": [
+    "**/*.ts"
+  ],
+  "exclude": [
+    "**/*.map"
+  ]
+}
