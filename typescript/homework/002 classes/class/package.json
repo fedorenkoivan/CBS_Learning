@@ -1,0 +1,11 @@
+{
+  "name": "class",
+  "version": "1.0.0",
+  "packages": {},
+  "scripts": {
+    "watcher": "tsc -w",
+    "chooseVers": "tsc -t",
+    "setFolder": "tsc --outDir",
+    "removeComm": "tsc --removeComments"
+  }
+}
